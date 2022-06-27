@@ -1,18 +1,15 @@
-def fun(n):
-    fc=0
+def prime(n):
     if n==1:
-        return 1
-    for i in range(1,n+1):
-           if n%i==0:
-               fc+=1
-    if fc==2:
         return 0
-    else:
-        return 1
-n=int(input())
-c=0
-for i in range(1,n+1):
-    if(n%i==0):
-        if(fun(i)):
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return 0
+    return 1
+a=int(input())
+b,c=0,0
+for i in range(1,a+1):
+    if a%i==0:
+        b+=1
+        if prime(i):
             c+=1
-print(c)
+print(b-c)
