@@ -1,5 +1,5 @@
-n=int(input())
-while(n):
+t=int(input())
+while t:
     a,b=map(int,input().split())
     print(a+b)
-    n-=1
+    t-+1
