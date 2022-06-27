@@ -1,4 +1,3 @@
-pi=3.14
 r=int(input())
-a=pi*r*r
-print('{0:.2f}'.format(a))
+x=3.14*r*r
+print("{0:0.2f}".format(x))
