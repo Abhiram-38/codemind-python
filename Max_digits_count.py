@@ -1,13 +1,17 @@
 def fun(n):
     c=0
     while n:
-        n=n//10
         c+=1
+        n=n//10
     return c
 n=int(input())
 a=list(map(int,input().split()))
-x=[]
+b=[]
 for i in a:
-    x.append(fun(i))
-y=max(x)
-print(x.count(y))
+    b.append(fun(i))
+c=max(b)
+d=0
+for i in a:
+    if fun(i)==c:
+        d+=1
+print(d)
