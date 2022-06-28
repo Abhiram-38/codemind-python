@@ -1,11 +1,12 @@
 n=int(input())
 a=list(map(int,input().split()))
-x=[]
+b=[]
+a
 for i in a:
-    if i==a.count(i) and i not in x:
-        x.append(i)
-if len(x)==0:
+    if i==a.count(i) and i not in b:
+        b.append(i)
+if len(b)==0:
     print(-1)
 else:
-    y=sum(x)/len(x)
-    print('%0.2f'%y)
+    x=(sum(b)/len(b))
+    print("{0:0.2f}".format(x))
