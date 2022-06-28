@@ -2,6 +2,6 @@ n=int(input())
 a=list(map(int,input().split()))
 b=[]
 for i in a:
-    if i not in b:
+    if a.count(i)>=1 and i not in b:
+        print(i,end=' ')
         b.append(i)
-print(*b)
