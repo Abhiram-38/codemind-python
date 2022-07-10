@@ -1,9 +1,9 @@
 def fun(n):
-    if n==0:
-        return 1
+    c=0
     if n<0:
         n=-n
-    c=0
+    if n==0:
+        return 1
     while n:
         c+=1
         n=n//10
