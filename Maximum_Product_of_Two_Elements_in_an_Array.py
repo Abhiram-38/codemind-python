@@ -1,0 +1,5 @@
+a=list(map(int,input().split()))
+x=max(a)
+a.remove(max(a))
+y=max(a)
+print((x-1)*(y-1))
