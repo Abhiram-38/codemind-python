@@ -1,8 +1,12 @@
-n=input()
-n=n.split()
-for i in n:
+s=input()
+s=s.lower()
+s=s.split(' ')
+a=[]
+for j in s:
     c=0
-    for j in i:
-        if j=='a' or j=='e' or j=='i' or j=='o' or j=='u' or j=='A' or j=='E' or j=='I' or j=='O' or j=='U':
+    x=list(j)
+    for i in x:
+        if i=='a'or i=='e' or i=='i' or i=='o' or i=='u':
             c+=1
-    print(c,end=' ')
+    a.append(c)
+print(*a)
