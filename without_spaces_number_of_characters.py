@@ -1,6 +1,8 @@
-n=str(input())
-count=0
-for i in n:
-    if ord(i)!=32:
-        count+=1
-print(count)
+s=input()
+s=list(s)
+c=0
+for i in s:
+    if i==' ':
+        continue
+    c+=1
+print(c)
