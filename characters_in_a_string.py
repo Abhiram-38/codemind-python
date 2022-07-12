@@ -1,2 +1,3 @@
-n=str(input())
-print(len(n))
+s=input()
+s=list(s)
+print(len(s))
