@@ -1,13 +1,17 @@
-a=input()
-b=input()
-a=a.lower()
-b=b.lower()
-if len(a)==len(b):
-    a=sorted(a)
-    b=sorted(a)
-    if a==b:
-        print('True')
+s1=input()
+s2=input()
+s1=s1.lower()
+s2=s2.lower()
+s1=list(s1)
+s2=list(s2)
+c=0
+if len(s1)==len(s2):
+    for i in s1:
+        if i in s2:
+            c+=1
+    if c==len(s1):
+        print(True)
     else:
-        print('False')
+        print(False)
 else:
-    print('False')
+    print(False)
