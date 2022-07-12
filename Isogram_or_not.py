@@ -1,9 +1,10 @@
-s=str(input())
-a=[]
+s=input()
+s=list(s)
+c=0
 for i in s:
-    a.append(i)
-b=set(a)
-if len(a)==len(b):
-    print('True')
+    if s.count(i)==1:
+        c+=1
+if c==len(s):
+    print(True)
 else:
-    print('False')
+    print(False)
