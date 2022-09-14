@@ -1,0 +1,11 @@
+n=int(input())
+x=2
+a=0
+b=1
+print(a,b,end=' ')
+while x!=n:
+    c=a+b
+    print(c,end=' ')
+    a=b
+    b=c
+    x+=1
