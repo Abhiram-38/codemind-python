@@ -1,7 +1,7 @@
 n=int(input())
-for i in range(1,n+1):
-    if n==i*i:
-        print('True')
-        break
+x=n**0.5
+x=int(x)
+if x**2==n:
+    print(True)
 else:
-    print('False')
+    print(False)
