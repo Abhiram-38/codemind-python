@@ -1,6 +1,10 @@
 s=input()
+v=['a','e','i','o','u','A','E','I','O','U']
 a=[]
 for i in s:
-    if (i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U')and i not in a:
+    if i in v and i not in a:
         a.append(i)
-        print(i,end=' ')
+if len(a)==0:
+    print(-1)
+else:
+    print(*a)
