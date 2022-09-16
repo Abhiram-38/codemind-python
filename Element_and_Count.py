@@ -1,7 +1,8 @@
 n=int(input())
 a=list(map(int,input().split()))
-x=[]
+arr=[]
 for i in a:
-    if i not in x:
-        print(i,a.count(i),end=' ')
-        x.append(i)
+    if i not in arr:
+        arr.append(i)
+        print(i,end=' ')
+        print(a.count(i),end=' ')
