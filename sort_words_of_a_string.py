@@ -1,17 +1,17 @@
 s=input()
-s=s.split(' ')
+s=s.split()
 for i in s:
     x=list(i)
     a=[]
-    for i in x:
-        if ord(i)>=97 and ord(i)<=122:
-            a.append(i)
+    for j in x:
+        if j.isalpha():
+            a.append(j)
     a.sort()
-    d=0
-    for k in range(0,len(x)):
+    y=0
+    for k in range(len(x)):
         if x[k] not in a:
             print(x[k],end='')
         else:
-            print(a[d],end='')
-            d+=1
+            print(a[y],end='')
+            y+=1
     print(end=' ')
