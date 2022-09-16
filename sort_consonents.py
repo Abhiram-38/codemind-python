@@ -1,18 +1,18 @@
-s=list(input().split(' '))
-v=['a','e','i','o','u']
+s=input()
+s=s.split(' ')
+v=['a','e','i','o','u','A','E','I','O','U']
 for i in s:
     x=list(i)
-    arr=[]
+    a=[]
     for j in x:
         if j not in v:
-            arr.append(j)
-    arr.sort()
-    d=0
-    for k in range(0,len(x)):
-        if x[k] in v:
-            print(x[k],end='')
+            a.append(j)
+    a.sort()
+    y=0
+    for k in range(len(x)):
+        if x[k] not in v:
+            print(a[y],end='')
+            y+=1
         else:
-            print(arr[d],end='')
-            d+=1
+            print(x[k],end='')
     print(end=' ')
-            
